@@ -91,6 +91,10 @@ nav a {
     padding: 15px 35px;
 }
 
+nav a:hover {
+    border-bottom: 1px solid #FD6E0A;
+}
+
 .banner {
     padding: 30px 20px 0px 150px;
     display: flex;
