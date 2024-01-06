@@ -20,8 +20,22 @@ body {
     background: #FD6E0A;
     border: none;
     color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
     padding: 15px 35px;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-primary:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 
 .section-heading {
@@ -36,6 +50,10 @@ body {
     text-align: center;
     line-height: 30px;
     margin: 10px 0;
+}
+
+.left-align {
+    text-align: left;
 }
 
 /* Header section */
@@ -228,6 +246,101 @@ main {
 
 .btn-container {
     margin: 50px auto;
+    text-align: center;
+}
+
+/* footer section */
+.footer {
+    background-color: #FFF8F3;
+    padding: 130px 100px;
     display: flex;
-    justify-content: center;
+    gap: 40px;
+}
+
+.footer-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .section-heading {
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 90%;
+}
+
+.form-row:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+}
+
+.input:focus:invalid {
+    border-bottom: 2px solid tomato;
+}
+
+.input:valid {
+    border-bottom: 2px solid #28b485;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.form label {
+    font-size: 14px;
+    display: block;
+    padding-left: 20px;
+    transition: all .3s;
+}
+
+.form textarea {
+    display: block;
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.form textarea:focus {
+    outline: none;
+}
+
+.form textarea:focus:invalid {
+    border-bottom: 2px solid tomato;
+}
+
+.input:placeholder-shown+label {
+    display: hidden;
+    opacity: 0;
+    transform: translateY(-29px);
+}
+
+textarea::-webkit-input-placeholder {
+    font-size: 15px
+}
+
+textarea:placeholder-shown+label {
+    display: hidden;
+    opacity: 0;
+    transform: translateY(-69px);
+}
+
+textarea:focus:valid {
+    border-bottom: 2px solid #28b485;
 }
