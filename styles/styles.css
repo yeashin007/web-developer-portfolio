@@ -330,6 +330,7 @@ main {
     border: none;
     border-radius: 4px;
     border-bottom: 2px solid transparent;
+    resize: none;
 }
 
 .form textarea:focus {
